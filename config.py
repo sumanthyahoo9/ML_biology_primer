@@ -6,3 +6,4 @@ SEED = 42
 BATCH_SIZE=16
 LR = 2e-5
 EPOCHS = 10
+CHECKPOINT_DIR = "checkpoints/best_paratope_model"

@@ -2,3 +2,5 @@
 ml_bio_venv/
 # Python execution files
 __pycache__/
+# Model files
+checkpoints/

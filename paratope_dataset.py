@@ -5,7 +5,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 from data_loader import list_paratope_files
 from dataset_reader import read_parquet_files
-from tokenizer_utils import build_dataset
+from utils.tokenizer import build_dataset
 
 
 class ParatopeDataset(Dataset):

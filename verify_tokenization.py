@@ -4,7 +4,7 @@ Verify the tokenization
 from model_loader import load_all
 from data_loader import list_paratope_files
 from dataset_reader import read_parquet_files
-from tokenizer_utils import format_sequence
+from utils.tokenizer import format_sequence
 
 
 def check_token_count(tokenizer, seq):
