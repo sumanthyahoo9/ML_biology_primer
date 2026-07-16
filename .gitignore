@@ -1,2 +1,4 @@
 # Virtual environment files
-biology_venv/
+ml_bio_venv/
+# Python execution files
+__pycache__/
