@@ -14,7 +14,8 @@ from config import MAX_LENGTH, BATCH_SIZE, CHECKPOINT_DIR
 
 def load_best_model():
     model = RoFormerForTokenClassification.from_pretrained(CHECKPOINT_DIR, num_labels=NUM_LABELS)
-    return model.to("cuda").eval()
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    return model.to(device).eval()
 
 
 def collect_batch(model, batch, device):
